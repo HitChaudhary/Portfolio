@@ -27,7 +27,7 @@ export default function Navbar({ isDark, onThemeToggle }) {
             <span className="font-display font-bold text-xs sm:text-base tracking-tight uppercase group-hover:text-[#ff4314] transition-colors whitespace-nowrap">
               HITKUMAR CHAUDHARY
             </span>
-            <span className="font-mono-custom text-[10px] sm:text-xs font-normal text-zinc-400 opacity-80">
+            <span className="hidden sm:inline font-mono-custom text-[10px] sm:text-xs font-normal text-zinc-400 opacity-80">
               // FULL STACK &amp; MERN
             </span>
           </div>

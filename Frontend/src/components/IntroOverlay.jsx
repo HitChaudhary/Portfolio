@@ -14,7 +14,7 @@ export default function IntroOverlay() {
       setTimeout(() => {
         overlay.classList.add('hide-overlay');
         sessionStorage.setItem('hasSeenIntro', 'true');
-      }, 900);
+      }, 1900);
     }
   }, []);
 

@@ -90,7 +90,7 @@ export default function Home({ isDark }) {
     } else {
       setTimeout(() => {
         hero.classList.add('hero-visible');
-      }, 920);
+      }, 1920);
     }
   }, []);
 
@@ -128,13 +128,13 @@ export default function Home({ isDark }) {
         </div>
 
         {/* Contact strip */}
-        <div className="flex flex-wrap items-center justify-center gap-3 font-mono-custom text-xs text-zinc-600 dark:text-zinc-400">
+        <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 font-mono-custom text-[11px] sm:text-xs text-zinc-600 dark:text-zinc-400 px-2">
           <span className="flex items-center gap-1"><MapPin className="w-3.5 h-3.5 text-[#ff4314]" /> Idar, Gujarat, India</span>
-          <span>•</span>
+          <span className="hidden sm:inline">•</span>
           <a href="mailto:hitchaudhary093@gmail.com" className="hover:text-[#ff4314] transition-colors flex items-center gap-1">
             <Mail className="w-3.5 h-3.5" /> hitchaudhary093@gmail.com
           </a>
-          <span>•</span>
+          <span className="hidden sm:inline">•</span>
           <a href="tel:+919328322307" className="hover:text-[#ff4314] transition-colors flex items-center gap-1">
             <Phone className="w-3.5 h-3.5" /> +91 93283 22307
           </a>
