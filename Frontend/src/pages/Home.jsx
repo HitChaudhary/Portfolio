@@ -120,10 +120,10 @@ export default function Home({ isDark }) {
 
         <div className="max-w-2xl space-y-3 px-2">
           <h2 className="text-xl sm:text-3xl font-display font-extrabold leading-tight">
-            Full Stack &amp; MERN Stack Developer
+            Product-Focused Full-Stack Developer
           </h2>
           <p className="text-zinc-600 dark:text-zinc-300 font-sans text-sm sm:text-lg font-medium leading-relaxed">
-            Results-driven developer skilled in building scalable RESTful APIs, MVC architecture, JWT authentication, and responsive React SPAs from schema modeling through to production deployment.
+            I build practical, scalable web products that solve real-world problems.
           </p>
         </div>
 
