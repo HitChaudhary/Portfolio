@@ -17,24 +17,24 @@ export default function Navbar({ isDark, onThemeToggle }) {
   const isActive = (to) => location.pathname === to;
 
   return (
-    <header className="w-full py-4 sm:py-6 px-4 sm:px-12 relative z-40 sticky top-0">
-      <div className="max-w-6xl mx-auto flex items-center justify-between p-2.5 sm:p-3 px-4 sm:px-6 glass-card-shadow rounded-full relative">
+    <header className="w-full py-3.5 sm:py-5 px-3 sm:px-8 lg:px-12 relative z-40 sticky top-0">
+      <div className="max-w-6xl mx-auto flex items-center justify-between p-2 sm:p-2.5 px-3.5 sm:px-5 glass-card-shadow rounded-full relative gap-2 sm:gap-4">
 
         {/* ── Brand ── */}
-        <Link to="/" className="group flex items-center gap-2 sm:gap-3">
+        <Link to="/" className="group flex items-center gap-2 shrink-0">
           <div className="w-2.5 h-2.5 rounded-full bg-[#10b981] animate-pulse shrink-0" />
-          <div className="flex flex-col sm:flex-row sm:items-center sm:gap-2 leading-tight">
-            <span className="font-display font-bold text-xs sm:text-base tracking-tight uppercase group-hover:text-[#ff4314] transition-colors whitespace-nowrap">
+          <div className="flex items-center gap-1.5 leading-none">
+            <span className="font-display font-black text-xs sm:text-sm lg:text-[15px] tracking-tight uppercase group-hover:text-[#ff4314] transition-colors whitespace-nowrap">
               HITKUMAR CHAUDHARY
             </span>
-            <span className="hidden sm:inline font-mono-custom text-[10px] sm:text-xs font-normal text-zinc-400 opacity-80">
+            <span className="hidden xl:inline font-mono-custom text-[9px] font-medium text-zinc-400 dark:text-zinc-500 opacity-80 whitespace-nowrap">
               // FULL STACK &amp; MERN
             </span>
           </div>
         </Link>
 
         {/* ── Desktop Nav ── */}
-        <nav className="hidden md:flex items-center gap-6 font-mono-custom text-xs font-bold uppercase tracking-wider text-zinc-600 dark:text-zinc-300">
+        <nav className="hidden md:flex items-center gap-3.5 lg:gap-5 xl:gap-6 font-mono-custom text-[11px] lg:text-xs font-bold uppercase tracking-wider text-zinc-600 dark:text-zinc-300">
           {navLinks.map((link) =>
             link.external ? (
               <a
@@ -42,7 +42,7 @@ export default function Navbar({ isDark, onThemeToggle }) {
                 href={link.to}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="sketch-underline py-1 transition-colors hover:text-[#ff4314] flex items-center gap-1"
+                className="sketch-underline py-1 transition-colors hover:text-[#ff4314] flex items-center gap-0.5 whitespace-nowrap"
               >
                 {link.label}
               </a>
@@ -50,7 +50,7 @@ export default function Navbar({ isDark, onThemeToggle }) {
               <Link
                 key={link.label}
                 to={link.to}
-                className={`sketch-underline py-1 transition-colors hover:text-[#ff4314] ${
+                className={`sketch-underline py-1 transition-colors hover:text-[#ff4314] whitespace-nowrap ${
                   isActive(link.to) ? 'text-[#ff4314]' : ''
                 }`}
               >
@@ -61,7 +61,7 @@ export default function Navbar({ isDark, onThemeToggle }) {
         </nav>
 
         {/* ── Right Controls ── */}
-        <div className="flex items-center gap-2 shrink-0">
+        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
           {/* Theme Toggle */}
           <button
             onClick={onThemeToggle}
@@ -75,24 +75,26 @@ export default function Navbar({ isDark, onThemeToggle }) {
             )}
           </button>
 
-          {/* Resume Download (desktop) */}
-          <a
-            href="https://drive.google.com/file/d/1cvnbQ51SD6Pi8Se5QRZ60ymQk0UDX5Vu/view?usp=drive_link"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-300 dark:border-zinc-700 bg-white/60 dark:bg-zinc-800/60 font-mono-custom text-[10px] font-bold text-zinc-700 dark:text-zinc-200 hover:border-[#ff4314] hover:text-[#ff4314] transition-all"
+          {/* Resume View / Download (desktop) */}
+          <Link
+            to="/resume"
+            className={`hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-zinc-300 dark:border-zinc-700 bg-white/60 dark:bg-zinc-800/60 font-mono-custom text-[10px] font-bold transition-all ${
+              isActive('/resume')
+                ? 'border-[#ff4314] text-[#ff4314] bg-[#ff4314]/10'
+                : 'text-zinc-700 dark:text-zinc-200 hover:border-[#ff4314] hover:text-[#ff4314]'
+            }`}
             title="View Resume"
           >
             <Download className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
-            <span className="hidden lg:inline">RESUME</span>
-          </a>
+            <span>RESUME</span>
+          </Link>
 
           {/* Hire Me (desktop) */}
           <a
             href="mailto:hitchaudhary093@gmail.com"
-            className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full border border-[#ff4314]/50 bg-[#ff4314]/10 font-mono-custom text-[10px] sm:text-xs font-bold text-[#ff4314] hover:bg-[#ff4314] hover:text-white transition-all"
+            className="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 sm:px-3.5 sm:py-1.5 rounded-full border border-[#ff4314]/50 bg-[#ff4314]/10 font-mono-custom text-[10px] sm:text-[11px] font-bold text-[#ff4314] hover:bg-[#ff4314] hover:text-white transition-all whitespace-nowrap"
           >
-            <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#10b981]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#10b981]" />
             HIRE ME
           </a>
 
@@ -142,15 +144,13 @@ export default function Navbar({ isDark, onThemeToggle }) {
               )
             )}
             {/* Resume in mobile */}
-            <a
-              href="https://drive.google.com/file/d/1cvnbQ51SD6Pi8Se5QRZ60ymQk0UDX5Vu/view?usp=drive_link"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/resume"
               className="py-2 px-3 rounded-xl border border-zinc-300 dark:border-zinc-700 hover:border-[#ff4314] hover:text-[#ff4314] transition-colors flex items-center gap-2 text-zinc-600 dark:text-zinc-300"
               onClick={() => setMobileOpen(false)}
             >
               <Download className="w-3.5 h-3.5" /> VIEW RESUME
-            </a>
+            </Link>
             {/* Hire Me in mobile */}
             <a
               href="mailto:hitchaudhary093@gmail.com"

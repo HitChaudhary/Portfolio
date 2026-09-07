@@ -29,6 +29,15 @@ const RepoCard = ({ stars, starsColor, name, desc, lang, repoLink, liveLink }) =
 export default function Projects() {
   const repos = [
     {
+      stars: '🔥 FLAGSHIP SAAS',
+      starsColor: 'text-[#ff4314] bg-[#ff4314]/10',
+      name: 'Presenso-Presence-Workforce-Management-Platform',
+      desc: 'Smart QR & GPS geofencing attendance platform replacing ₹15k biometric hardware. Signed session tokens, server-side anti-spoofing, multi-tenancy, leave workflows, and live analytics.',
+      lang: 'TypeScript / React 19',
+      repoLink: 'https://github.com/HitChaudhary/Presenso-Presence-Workforce-Management-Platform',
+      liveLink: 'https://presenso-presence-workforce-management.onrender.com/',
+    },
+    {
       stars: '★ 1 STAR',
       starsColor: 'text-[#10b981] bg-[#10b981]/10',
       name: 'zubi-dubi-school-erp',

@@ -142,7 +142,7 @@ export default function Home({ isDark }) {
 
         {/* Skill badges */}
         <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 pt-1">
-          {['React.js & Redux', 'Node.js & Express', 'PostgreSQL & MongoDB', 'JWT & REST APIs'].map((s) => (
+          {['React 19 & TypeScript', 'Node.js & Express', 'PostgreSQL & tRPC', 'Tailwind CSS & REST APIs'].map((s) => (
             <Tag key={s}>{s}</Tag>
           ))}
         </div>
@@ -174,10 +174,10 @@ export default function Home({ isDark }) {
             <h2 className="text-2xl sm:text-4xl font-display font-extrabold mt-1">Skills &amp; Technologies</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            <StackCard title="Frontend" items={['JavaScript (ES6+)', 'React.js', 'Tailwind CSS', 'Single-Page Apps (SPA)']} />
-            <StackCard title="Backend & APIs" items={['Node.js & Express.js', 'Socket.io', 'MVC Architecture', 'JWT Authentication', 'Custom Middleware']} />
+            <StackCard title="Frontend" items={['TypeScript', 'JavaScript (ES6+)', 'React 19 / React.js', 'Tailwind CSS', 'Single-Page Apps (SPA)']} />
+            <StackCard title="Backend & APIs" items={['Node.js & Express.js', 'tRPC & REST APIs', 'Socket.io', 'JWT & Signed Sessions', 'MVC & Middleware']} />
             <StackCard title="Databases" items={['PostgreSQL', 'Prisma ORM', 'MongoDB', 'Mongoose ODM', 'Schema Design & CRUD']} />
-            <StackCard title="Tools & Methods" items={['Git & GitHub', 'Postman API Testing', 'AI-Assisted Prototyping', 'Vercel & Render Deployment']} />
+            <StackCard title="Security & DevOps" items={['GPS Geofencing Math', 'Multi-Tenancy Isolation', 'Git & GitHub', 'Postman & Render Deploy']} />
           </div>
         </div>
       </section>
@@ -195,6 +195,21 @@ export default function Home({ isDark }) {
               VIEW ALL REPOS ON GITHUB ↗
             </a>
           </div>
+
+          <ProjectItem
+            badge="FLAGSHIP SAAS // LIVE DEPLOYMENT"
+            badgeColor="bg-[#ff4314]/10 text-[#ff4314] border-[#ff4314]/30"
+            statusTag="🔥 FEATURED"
+            title="Presenso — Presence Workforce Management"
+            desc="Replaced ₹15,000 hardware biometric fingerprint scanners with a zero-installation, QR & GPS geofencing attendance platform. Validates live signed QR session tokens and browser GPS against the office radius entirely server-side in 2 seconds."
+            tags={['React 19', 'TypeScript', 'Node.js', 'Express.js', 'tRPC', 'PostgreSQL', 'Tailwind CSS']}
+            link="https://presenso-presence-workforce-management.onrender.com/"
+            linkLabel="EXPLORE LIVE DEMO"
+            details={[
+              { label: '// ZERO-TRUST ANTI-SPOOFING', text: 'Server validates signed QR sessions and checks coordinates against office geofences. Spoofed GPS, home scanning, and expired tokens are rejected client-agnostically with race-condition prevention.' },
+              { label: '// ENTERPRISE ARCHITECTURE', text: 'Multi-tenant hierarchy (Super Admin → Org Admin → Departments → Employees), leave management approval workflows, automatic attendance close-out, and live analytics dashboards with complete data isolation.' },
+            ]}
+          />
 
           <ProjectItem
             badge="MOBILE-FIRST SAAS PLATFORM"
@@ -233,23 +248,10 @@ export default function Home({ isDark }) {
             tags={['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Vercel']}
             link="https://github.com/HitChaudhary/college-Management"
             linkLabel="VIEW REPOSITORY CODE"
+            isLast
             details={[
               { label: '// CAMPUS IMPACT', text: 'Engineered a digital admission portal and automated student inquiry management system, significantly reducing paper-based administrative workflows.' },
               { label: '// DEPLOYMENT', text: 'Deployed frontend to Vercel with optimized asset loading, responsive layouts, and cross-browser compatibility across all mobile devices.' },
-            ]}
-          />
-
-          <ProjectItem
-            badge="FULL STACK SYSTEM // 2025"
-            badgeColor="bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20"
-            title="Supermarket Management System"
-            desc="Full-stack supermarket software incorporating billing, inventory tracking, catalog management, and automated transaction logging."
-            tags={['React.js', 'Node.js', 'Express.js', 'MongoDB']}
-            link="https://github.com/HitChaudhary/Supermart-POS"
-            linkLabel="VIEW REPOSITORY CODE"
-            isLast
-            details={[
-              { label: '// BACKEND ARCHITECTURE', text: 'Designed backend RESTful API endpoints with Node.js and MongoDB database schemas for catalog tracking, stock alerts, and automated transaction logs.' },
             ]}
           />
         </div>
