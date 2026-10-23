@@ -55,7 +55,7 @@ export default function Resume() {
             </div>
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full font-mono-custom text-[11px] font-bold bg-[#10b981]/10 text-[#10b981] border border-[#10b981]/30 w-fit">
               <span className="w-2 h-2 rounded-full bg-[#10b981] animate-pulse" />
-              SEEKING MERN INTERNSHIP
+              FULL-STACK DEVELOPER (MERN)
             </span>
           </div>
 
@@ -88,7 +88,7 @@ export default function Resume() {
             // PROFESSIONAL SUMMARY
           </h2>
           <p className="font-sans text-xs sm:text-sm text-zinc-700 dark:text-zinc-300 leading-relaxed font-medium">
-            Product-focused Full-Stack &amp; MERN Developer in final year of B.Sc. CA &amp; IT, actively seeking internship opportunities. Proven expertise building production-grade web systems, implementing zero-trust security (signed session tokens, GPS geofencing against spoofing), multi-tenant SaaS architectures with strict data isolation, and robust full-stack workflows using React 19, TypeScript, Node.js, Express, PostgreSQL, and MongoDB.
+            Full-stack developer with 1+ year of hands-on training and project experience building and deploying web applications with JavaScript, React.js, Node.js, Express.js, MongoDB and PostgreSQL. Delivered 4+ client projects as a MERN Stack Intern and independently built three full-stack applications featuring REST APIs, JWT authentication, role-based access control and multi-tenant data isolation, with live deployments on Render and Vercel.
           </p>
         </section>
 
@@ -100,23 +100,23 @@ export default function Resume() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 font-mono-custom text-xs">
             <div className="p-3.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 space-y-1">
               <span className="font-bold text-zinc-900 dark:text-zinc-100">Languages &amp; Core:</span>
-              <p className="text-zinc-600 dark:text-zinc-400 font-normal">TypeScript, JavaScript (ES6+), HTML5, CSS3, SQL</p>
+              <p className="text-zinc-600 dark:text-zinc-400 font-normal">JavaScript (ES6+), Python, TypeScript (Basic), HTML5, CSS3, SQL Fundamentals</p>
             </div>
             <div className="p-3.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 space-y-1">
               <span className="font-bold text-zinc-900 dark:text-zinc-100">Frontend Development:</span>
-              <p className="text-zinc-600 dark:text-zinc-400 font-normal">React 19, React.js, Tailwind CSS, Single Page Applications (SPA), Context API / State Management</p>
+              <p className="text-zinc-600 dark:text-zinc-400 font-normal">React.js, React 19 / 18, Redux Toolkit, Tailwind CSS, Responsive Web Design, Single Page Applications</p>
             </div>
             <div className="p-3.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 space-y-1">
-              <span className="font-bold text-zinc-900 dark:text-zinc-100">Backend &amp; APIs:</span>
-              <p className="text-zinc-600 dark:text-zinc-400 font-normal">Node.js, Express.js, tRPC, RESTful APIs, WebSockets / Socket.io, JWT Authentication, Custom Middleware, MVC</p>
+              <span className="font-bold text-zinc-900 dark:text-zinc-100">Backend Development:</span>
+              <p className="text-zinc-600 dark:text-zinc-400 font-normal">Node.js, Express.js, REST APIs, JWT Authentication, Custom Middleware, MVC Architecture, tRPC</p>
             </div>
             <div className="p-3.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 space-y-1">
               <span className="font-bold text-zinc-900 dark:text-zinc-100">Databases &amp; ORMs:</span>
-              <p className="text-zinc-600 dark:text-zinc-400 font-normal">PostgreSQL, Prisma ORM, MongoDB, Mongoose ODM, Relational &amp; Document Schema Modeling</p>
+              <p className="text-zinc-600 dark:text-zinc-400 font-normal">MongoDB, Mongoose ODM, PostgreSQL, Prisma ORM, Drizzle ORM, Relational &amp; Document Schema Modeling</p>
             </div>
             <div className="p-3.5 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/50 space-y-1 md:col-span-2">
-              <span className="font-bold text-zinc-900 dark:text-zinc-100">System Design &amp; Security Concepts:</span>
-              <p className="text-zinc-600 dark:text-zinc-400 font-normal">GPS Geofencing Math &amp; Radius Validation, Cryptographic Signed Session Tokens, Anti-Spoofing Zero-Trust Verification, Multi-Tenant Hierarchy (Super Admin → Org Admin → Dept → User), Race Condition Prevention, Git, Postman, Vercel, Render</p>
+              <span className="font-bold text-zinc-900 dark:text-zinc-100">Developer Tools, Security &amp; Deployment:</span>
+              <p className="text-zinc-600 dark:text-zinc-400 font-normal">Git, GitHub, Postman, Cloudinary Media Management, VS Code, Vercel, Render, GPS Geofencing, Zero-Trust Anti-Spoofing, Multi-Tenant Hierarchy</p>
             </div>
           </div>
         </section>
@@ -178,12 +178,63 @@ export default function Resume() {
             </ul>
           </div>
 
-          {/* Project 2: Zubi Dubi School ERP */}
+          {/* Project 2: Qrfolio */}
+          <div className="p-4 sm:p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/40 dark:bg-zinc-900/40 space-y-3">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+              <div className="flex items-center gap-2 flex-wrap">
+                <h3 className="text-base sm:text-lg font-display font-black text-zinc-900 dark:text-white">
+                  Qrfolio — Dynamic QR &amp; Digital Business Profile Platform
+                </h3>
+                <span className="px-2 py-0.5 rounded font-mono-custom text-[10px] font-bold bg-[#10b981]/10 text-[#10b981] border border-[#10b981]/30">
+                  LIVE DEMO
+                </span>
+              </div>
+              <div className="flex items-center gap-3 font-mono-custom text-xs font-bold">
+                <a
+                  href="https://qrfolio-one.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#10b981] hover:underline flex items-center gap-0.5"
+                >
+                  LIVE DEMO <ExternalLink className="w-3 h-3" />
+                </a>
+                <a
+                  href="https://github.com/HitChaudhary/Qrfolio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#ff4314] hover:underline flex items-center gap-0.5"
+                >
+                  GITHUB <ExternalLink className="w-3 h-3" />
+                </a>
+              </div>
+            </div>
+
+            <p className="font-mono-custom text-xs text-[#ff4314] font-semibold">
+              Tech Stack: React 18, TypeScript, Vite, Node.js, Express, MongoDB, Mongoose, JWT, Cloudinary, Tailwind CSS
+            </p>
+
+            <ul className="space-y-1.5 font-sans text-xs text-zinc-700 dark:text-zinc-300 list-disc list-inside">
+              <li>
+                <strong>Branded Digital Profile:</strong> Built a platform where a business gets one branded QR code (with its logo) that opens a public page with all its links: menu, Maps, Instagram, WhatsApp and reviews.
+              </li>
+              <li>
+                <strong>Atomic Analytics &amp; Privacy:</strong> Tracks scans and link clicks per day with atomic MongoDB updates to avoid double-counting; stores no personal data.
+              </li>
+              <li>
+                <strong>Security Architecture:</strong> Secured with JWT, bcrypt, owner-only data access, admin role checks, Helmet, and rate limiting.
+              </li>
+              <li>
+                <strong>Media &amp; Dashboard:</strong> Cloudinary logo upload restricted to JPG/PNG/WEBP files up to 2 MB. Built owner dashboard (manage and reorder links, download QR, analytics), admin panel for users and businesses, and a Google Review Assistant that drafts review text.
+              </li>
+            </ul>
+          </div>
+
+          {/* Project 3: Zubi Dubi School ERP */}
           <div className="p-4 sm:p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/40 dark:bg-zinc-900/40 space-y-2.5">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
               <div className="flex items-center gap-2 flex-wrap">
                 <h3 className="text-base sm:text-lg font-display font-bold text-zinc-900 dark:text-white">
-                  Zubi Dubi School ERP &amp; Learning Platform
+                  Zubi Dubi — Multi-Tenant School Management Platform (SaaS)
                 </h3>
                 <span className="px-2 py-0.5 rounded font-mono-custom text-[10px] font-bold bg-[#10b981]/10 text-[#10b981] border border-[#10b981]/30">
                   MOBILE-FIRST SAAS
@@ -200,20 +251,26 @@ export default function Resume() {
             </div>
 
             <p className="font-mono-custom text-xs text-zinc-500 font-semibold">
-              Tech Stack: React.js, Node.js, Express.js, PostgreSQL, Prisma ORM, Tailwind CSS
+              Tech Stack: React.js, Vite, Node.js, Express 5, PostgreSQL, Prisma ORM, JWT, Tailwind CSS, GSAP
             </p>
 
             <ul className="space-y-1.5 font-sans text-xs text-zinc-700 dark:text-zinc-300 list-disc list-inside">
               <li>
-                Architected relational institutional data models using PostgreSQL and Prisma ORM for high query performance and data integrity.
+                Built a multi-tenant school platform where each school has its own admin, teachers, and students, and a Super Admin approves new schools.
               </li>
               <li>
-                Engineered secure multi-role authentication guards and tailored dashboards for Administrators, Teachers, and Students.
+                Enforces tenant isolation by scoping every query to the schoolId in the verified JWT.
+              </li>
+              <li>
+                4-role RBAC (Super Admin, School Admin, Teacher, Student) with bcrypt hashing and route guards.
+              </li>
+              <li>
+                Teachers create assignments and grade submissions; live classes run through Jitsi, Zoom, or Google Meet links.
               </li>
             </ul>
           </div>
 
-          {/* Project 3: Restaurant & Cafe Management POS */}
+          {/* Project 4: Restaurant & Cafe Management POS */}
           <div className="p-4 sm:p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/40 dark:bg-zinc-900/40 space-y-2.5">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
               <h3 className="text-base sm:text-lg font-display font-bold text-zinc-900 dark:text-white">
@@ -243,7 +300,7 @@ export default function Resume() {
             </ul>
           </div>
 
-          {/* Project 4: College Management */}
+          {/* Project 5: College Management */}
           <div className="p-4 sm:p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/40 dark:bg-zinc-900/40 space-y-2.5">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
               <h3 className="text-base sm:text-lg font-display font-bold text-zinc-900 dark:text-white">
@@ -282,21 +339,66 @@ export default function Resume() {
         </section>
 
         {/* ── Experience & Training ── */}
-        <section className="space-y-3">
-          <h2 className="font-mono-custom text-xs font-bold uppercase tracking-wider text-[#ff4314]">
-            // EXPERIENCE &amp; INDUSTRIAL TRAINING
-          </h2>
+        <section className="space-y-4">
+          <div className="flex items-center justify-between border-b border-zinc-200 dark:border-zinc-800 pb-2">
+            <h2 className="font-mono-custom text-xs font-bold uppercase tracking-wider text-[#ff4314]">
+              // PROFESSIONAL EXPERIENCE &amp; INDUSTRIAL TRAINING
+            </h2>
+            <span className="font-mono-custom text-[11px] text-[#10b981] font-bold">4+ CLIENT PROJECTS DELIVERED</span>
+          </div>
+
+          {/* MERN Stack Intern */}
+          <div className="p-4 sm:p-5 rounded-2xl border border-[#ff4314]/30 bg-[#ff4314]/5 space-y-3">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+              <div className="flex items-center gap-2 flex-wrap">
+                <h3 className="text-base sm:text-lg font-display font-black text-zinc-900 dark:text-white">
+                  MERN Stack Intern — Tech Innovation
+                </h3>
+                <span className="px-2 py-0.5 rounded font-mono-custom text-[10px] font-bold bg-[#ff4314] text-white">
+                  INTERNSHIP
+                </span>
+              </div>
+              <span className="font-mono-custom text-xs font-bold text-zinc-500">JUN 2026 — SEP 2026</span>
+            </div>
+
+            <p className="font-mono-custom text-xs text-[#ff4314] font-semibold">
+              MongoDB | Express.js | React.js | Node.js | Cloudinary
+            </p>
+
+            <ul className="space-y-1.5 font-sans text-xs text-zinc-700 dark:text-zinc-300 list-disc list-inside">
+              <li>
+                Delivered 4+ client projects with the MERN stack, integrating Cloudinary media management and turning client requirements into production-ready features.
+              </li>
+              <li>
+                Redesigned a live production client website end-to-end and received final sign-off within 1–2 revision cycles.
+              </li>
+              <li>
+                Owned requirement gathering and delivery of the 4th client project, from discovery through deployment.
+              </li>
+              <li>
+                Applied secure coding practices (input validation, environment-based secrets, authentication checks) on every feature, using AI-assisted tools to speed up delivery.
+              </li>
+            </ul>
+          </div>
+
+          {/* Industrial Training */}
           <div className="p-4 sm:p-5 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/40 dark:bg-zinc-900/40 space-y-2">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-              <h3 className="text-base font-display font-bold text-zinc-900 dark:text-white">
-                Advanced MERN Stack Development Trainee
-              </h3>
-              <span className="font-mono-custom text-xs font-bold text-zinc-500">JAN 2025 — PRESENT</span>
+              <div className="flex items-center gap-2 flex-wrap">
+                <h3 className="text-base font-display font-bold text-zinc-900 dark:text-white">
+                  Advanced MERN Stack Development — Code Master Technology
+                </h3>
+                <span className="px-2 py-0.5 rounded font-mono-custom text-[10px] font-bold bg-zinc-200 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-300">
+                  TRAINING
+                </span>
+              </div>
+              <span className="font-mono-custom text-xs font-bold text-zinc-500">JAN 2025 — JUN 2026</span>
             </div>
-            <p className="font-mono-custom text-xs text-[#ff4314] font-semibold">Code Master Technology</p>
-            <p className="font-sans text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed font-medium">
-              Completed hands-on intensive training building scalable full-stack applications with modern JavaScript (ES6+), React.js, Node.js, Express.js, and MongoDB/PostgreSQL. Implemented JWT authentication patterns, REST API endpoints, MVC architecture, Agile sprints, and Postman testing suites.
-            </p>
+            <ul className="space-y-1.5 font-sans text-xs text-zinc-700 dark:text-zinc-300 list-disc list-inside">
+              <li>
+                Structured full-stack training in JavaScript, React.js, Node.js, Express.js, MongoDB and REST API design; built and deployed multiple real-world projects using MVC and scalable schema design.
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -311,7 +413,7 @@ export default function Resume() {
                 <span className="font-display font-bold text-sm text-zinc-900 dark:text-white">B.Sc. (CA &amp; IT) — Final Year</span>
                 <span className="font-mono-custom text-[10px] text-[#10b981] font-bold">2023 — 2026</span>
               </div>
-              <p className="font-medium text-zinc-600 dark:text-zinc-400">Prayag College Campus, Gujarat</p>
+              <p className="font-medium text-zinc-600 dark:text-zinc-400">Prayag College Campus, Gujarat | CGPA: 7.4</p>
               <p className="text-[11px] text-zinc-500 font-mono-custom">DBMS, Web Tech, Software Engineering, Data Structures</p>
             </div>
 

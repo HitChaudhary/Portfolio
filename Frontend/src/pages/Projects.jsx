@@ -38,6 +38,15 @@ export default function Projects() {
       liveLink: 'https://presenso-presence-workforce-management.onrender.com/',
     },
     {
+      stars: '✨ FEATURED SAAS',
+      starsColor: 'text-[#10b981] bg-[#10b981]/10',
+      name: 'Qrfolio',
+      desc: 'Dynamic QR & digital business profile platform. Branded QR code with logo, atomic MongoDB scan/click tracking, owner dashboard, Google Review assistant, and Cloudinary media uploads.',
+      lang: 'TypeScript / React 18',
+      repoLink: 'https://github.com/HitChaudhary/Qrfolio',
+      liveLink: 'https://qrfolio-one.vercel.app/',
+    },
+    {
       stars: '★ 1 STAR',
       starsColor: 'text-[#10b981] bg-[#10b981]/10',
       name: 'zubi-dubi-school-erp',

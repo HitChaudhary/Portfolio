@@ -4,6 +4,7 @@ import { Moon, Sun, Menu, X, Download } from 'lucide-react';
 
 const navLinks = [
   { label: 'Home',         to: '/',              external: false },
+  { label: 'Experience',   to: '/experience',    external: false },
   { label: 'Projects',     to: '/projects',      external: false },
   { label: 'Achievements', to: '/achievements',  external: false },
   { label: 'Contact',      to: '/contact',       external: false },

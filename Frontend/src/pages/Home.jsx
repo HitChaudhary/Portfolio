@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { GitFork, ExternalLink, MapPin, Mail, Phone } from 'lucide-react';
 import BoilingCanvas from '../components/BoilingCanvas';
 import Footer from '../components/Footer';
@@ -142,7 +143,7 @@ export default function Home({ isDark }) {
 
         {/* Skill badges */}
         <div className="flex flex-wrap items-center justify-center gap-1.5 sm:gap-2 pt-1">
-          {['React 19 & TypeScript', 'Node.js & Express', 'PostgreSQL & tRPC', 'Tailwind CSS & REST APIs'].map((s) => (
+          {['React 19 & React 18', 'Node.js & Express.js', 'MongoDB & PostgreSQL', 'Cloudinary & REST APIs'].map((s) => (
             <Tag key={s}>{s}</Tag>
           ))}
         </div>
@@ -174,10 +175,10 @@ export default function Home({ isDark }) {
             <h2 className="text-2xl sm:text-4xl font-display font-extrabold mt-1">Skills &amp; Technologies</h2>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            <StackCard title="Frontend" items={['TypeScript', 'JavaScript (ES6+)', 'React 19 / React.js', 'Tailwind CSS', 'Single-Page Apps (SPA)']} />
-            <StackCard title="Backend & APIs" items={['Node.js & Express.js', 'tRPC & REST APIs', 'Socket.io', 'JWT & Signed Sessions', 'MVC & Middleware']} />
-            <StackCard title="Databases" items={['PostgreSQL', 'Prisma ORM', 'MongoDB', 'Mongoose ODM', 'Schema Design & CRUD']} />
-            <StackCard title="Security & DevOps" items={['GPS Geofencing Math', 'Multi-Tenancy Isolation', 'Git & GitHub', 'Postman & Render Deploy']} />
+            <StackCard title="Frontend" items={['TypeScript & JavaScript', 'React 19 / React 18', 'Tailwind CSS', 'Redux Toolkit', 'Responsive Design']} />
+            <StackCard title="Backend & APIs" items={['Node.js & Express.js', 'tRPC & REST APIs', 'JWT Authentication', 'MVC & Middleware', 'Cloudinary Media']} />
+            <StackCard title="Databases" items={['MongoDB & Mongoose', 'PostgreSQL & SQL', 'Prisma ORM', 'Schema Design & CRUD', 'Data Isolation']} />
+            <StackCard title="Security & DevOps" items={['GPS Geofencing Math', 'Zero-Trust Anti-Spoofing', 'Git & GitHub', 'Postman, Render & Vercel']} />
           </div>
         </div>
       </section>
@@ -208,6 +209,22 @@ export default function Home({ isDark }) {
             details={[
               { label: '// ZERO-TRUST ANTI-SPOOFING', text: 'Server validates signed QR sessions and checks coordinates against office geofences. Spoofed GPS, home scanning, and expired tokens are rejected client-agnostically with race-condition prevention.' },
               { label: '// ENTERPRISE ARCHITECTURE', text: 'Multi-tenant hierarchy (Super Admin → Org Admin → Departments → Employees), leave management approval workflows, automatic attendance close-out, and live analytics dashboards with complete data isolation.' },
+            ]}
+          />
+
+          <ProjectItem
+            badge="DYNAMIC QR SAAS // LIVE DEPLOYMENT"
+            badgeColor="bg-[#ff4314]/10 text-[#ff4314] border-[#ff4314]/30"
+            statusTag="✨ NEW SAAS"
+            title="QrFolio — Smart Dynamic QR Codes & Bio Links"
+            desc="Branded QR code and digital business profile platform. Enables companies to consolidate their menu, location, socials, and WhatsApp in a single dynamic link with real-time scan analytics and an AI-powered Google Review assistant."
+            tags={['React 18', 'TypeScript', 'Vite', 'Node.js', 'Express.js', 'MongoDB', 'JWT', 'Cloudinary', 'Tailwind CSS']}
+            link="https://qrfolio-one.vercel.app/"
+            linkLabel="EXPLORE LIVE DEMO"
+            details={[
+              { label: '// ATOMIC ANALYTICS & PRIVACY', text: 'Tracks daily scans and link clicks with atomic MongoDB updates preventing double-counting while preserving strict user privacy with zero personal data retention.' },
+              { label: '// SECURITY & MEDIA PIPELINE', text: 'Secured with JWT, bcrypt, owner-only data access, admin role checks, Helmet, and rate limiting. Integrates Cloudinary uploads restricted to JPG/PNG/WEBP files up to 2 MB.' },
+              { label: '// OWNER CONTROLS & AI ASSISTANT', text: 'Owner dashboard to reorder dynamic links, download print-ready QR codes, and a Google Review Assistant that drafts helpful customer review text.' },
             ]}
           />
 
@@ -265,21 +282,29 @@ export default function Home({ isDark }) {
               <span className="font-mono-custom text-xs font-bold uppercase tracking-wider text-[#ff4314]">// 03. EXPERIENCE &amp; EDUCATION</span>
               <h2 className="text-2xl sm:text-4xl font-display font-extrabold mt-1">Professional Background</h2>
             </div>
-            <span className="font-mono-custom text-xs text-zinc-400">QUALIFICATIONS</span>
+            <Link to="/experience" className="font-mono-custom text-xs text-zinc-500 hover:text-[#ff4314] transition-colors flex items-center gap-1 font-bold">
+              <span>EXPLORE EXPERIENCE PAGE</span> ↗
+            </Link>
           </div>
 
           <div className="space-y-8 sm:space-y-10 font-sans">
             <ExpItem
               isActive
+              title="MERN Stack Intern"
+              period="JUN 2026 — SEP 2026"
+              company="Tech Innovation • MongoDB, Express.js, React.js, Node.js, Cloudinary"
+              desc="Delivered 4+ client projects with the MERN stack, integrating Cloudinary media management. Redesigned a live production client website end-to-end and secured client sign-off within 1–2 revision cycles. Owned requirement gathering and delivery of the 4th client project, and applied secure coding practices (input validation, environment secrets, authentication checks) using AI-assisted tools."
+            />
+            <ExpItem
               title="Advanced MERN Stack Development Trainee"
-              period="JAN 2025 — PRESENT"
+              period="JAN 2025 — JUN 2026"
               company="Code Master Technology"
-              desc="Completed advanced training in modern JavaScript (ES6+), React.js, Node.js, Express.js, and MongoDB. Gained practical experience implementing JWT authentication, Agile workflows, MVC design patterns, and Postman API testing."
+              desc="Completed structured full-stack training in modern JavaScript (ES6+), React.js, Node.js, Express.js, MongoDB, and REST API design. Built and deployed multiple real-world projects applying MVC architecture and scalable schema modeling."
             />
             <ExpItem
               title="Bachelor of Science in Computer Applications & IT (B.Sc. CA & IT)"
               period="APR 2023 — APR 2026"
-              company="Prayag College Campus, Gujarat"
+              company="Prayag College Campus, Gujarat • CGPA: 7.4"
               desc="Relevant Coursework: Database Management Systems (DBMS), Web Technologies, Software Engineering, Data Structures, Python."
             />
             <ExpItem

@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import IntroOverlay from './components/IntroOverlay';
 import CustomCursor from './components/CustomCursor';
 import Home from './pages/Home';
+import Experience from './pages/Experience';
 import Projects from './pages/Projects';
 import Achievements from './pages/Achievements';
 import Contact from './pages/Contact';
@@ -39,6 +40,7 @@ export default function App() {
         <Navbar isDark={isDark} onThemeToggle={handleThemeToggle} />
         <Routes>
           <Route path="/" element={<Home isDark={isDark} />} />
+          <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/resume" element={<Resume />} />
